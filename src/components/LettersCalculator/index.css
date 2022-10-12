@@ -1,0 +1,79 @@
+.app-container {
+  background-image: linear-gradient(to right, #1d976c, #93f9b9);
+  height: 100vh;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  color: #ffffff;
+  display: flex;
+  text-align: left;
+  font-family: 'Roboto';
+}
+
+.title {
+  width: 180px;
+  font-size: 28px;
+}
+
+.search-title {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.image {
+  width: 350px;
+  height: 300px;
+}
+
+.search {
+  border: solid 1px #e4e7eb;
+  height: 30px;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: transparent;
+  width: 250px;
+  outline: none;
+}
+
+.phrase-count {
+  height: 40px;
+  width: 130px;
+  background-color: #e4e7eb;
+  color: #219a6f;
+  border-radius: 6px;
+  border: none;
+  margin-top: 20px;
+  padding: 10px;
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .card-container {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .title {
+    width: 100%;
+    font-size: 24px;
+  }
+  .search-title {
+    text-align: left;
+  }
+  .phrase-count {
+    width: 250px;
+  }
+  .image {
+    order: -1;
+  }
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
